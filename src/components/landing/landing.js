@@ -88,7 +88,7 @@ const toggleNav = () => {
             </div>
           </div>
           <div className={styles.hero_image}>
-            <Image src={Heroimg} alt='hero img' className={styles.hero_image_} quality={90} style={{objectFit: "cover",marginTop: "50px"}}/>
+            <Image src={Heroimg} alt='hero img' className={styles.hero_image_} quality={90} layout />
           </div>
       </div>
       
