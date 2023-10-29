@@ -287,6 +287,9 @@
 .c_content .hero_h1 div {
     margin-top: 55px;
 }
+.c_content .hero_h4 {
+  font-size: 18px;color: #b4b2b2;font-family: "Poppins",sans-serif;font-weight: 600;
+}
 .c_content .hero_h1 div h2 {
     font-size: 32px;font-family: "Poppins", sans-serif;font-weight: 900;text-transform: capitalize;
 }
@@ -295,14 +298,17 @@
     line-height: 20px;letter-spacing: 1px;padding: 5px 0;margin-left: 50px;
 }
 .c_content .hero_h1 div.get_sd_btns {
-    display: flex;justify-content: space-evenly;
+    display: flex;justify-content: space-evenly;margin-top: 45px;
 }
-.c_content .hero_h1 div a .gsignin {
-    width: 220px;
+.c_content .hero_h1 div a.getstarted {
+    background-color: #08d34f94;width: fit-content;padding: 5px 12px;border-radius: 60px;height: fit-content;
+    font-family: "Poppins",sans-serif;font-size: 22px;font-weight: 600;box-shadow: 1px 1px 2px 2px #08d34f94;
+    background: rgb(13,20,24);
+background: linear-gradient(333deg, rgba(13,20,24,1) 0%, rgba(9,22,29,1) 0%, rgba(58,58,66,0.7049194677871149) 0%, rgba(57,57,62,0.9262079831932774) 0%, rgba(38,38,92,1) 0%, rgba(4,4,14,0.9626225490196079) 0%, rgba(36,168,19,0.9192051820728291) 0%, rgba(37,203,6,1) 100%, rgba(0,0,0,1) 100%, rgba(18,27,43,1) 100%, rgba(19,28,28,1) 100%, rgba(13,20,24,1) 100%, rgba(5,4,36,1) 100%, rgba(13,20,24,1) 100%, rgba(9,9,121,0.8757878151260504) 100%, rgba(0,212,255,1) 100%);
 }
 .c_content .hero_h1 div a.learnmore {
-    color: #233a86;border: none;font-family: "Poppins";font-size: 22px;
-    font-weight: 600;padding: 12px 28px 12px 28px;border-radius: 60px;margin-top: 2px;
+    color: #08d34f94;border: none;font-family: "Poppins";font-size: 22px;border: 2px solid #08d34f94;border-radius: 120px;
+    font-weight: 600;padding: 2px 28px 2px 28px;border-radius: 60px;margin-top: 0;
 }
 .p_content {
     background-color: #f5f5f5;margin-top: 5rem !important;
@@ -354,7 +360,20 @@
     background-color: #233a86;border: none;font-family: "Poppins";color: white;font-size: 22px;
     font-weight: 600;padding: 10px 20px 10px 20px;border-radius: 4px;margin-top: 3rem;
 }
-
+.exchmain {
+  width: 100%;margin: 115px 0;
+  background: rgb(13,20,24);
+background: linear-gradient(333deg, rgba(13,20,24,1) 0%, rgba(9,22,29,1) 0%, rgba(58,58,66,0.7049194677871149) 0%, rgba(57,57,62,0.9262079831932774) 0%, rgba(38,38,92,1) 0%, rgba(17,17,25,0.9626225490196079) 0%, rgba(9,10,11,1) 0%, rgba(0,0,0,1) 0%, rgba(4,12,4,1) 0%, rgba(6,14,6,1) 0%, rgba(6,14,6,1) 100%, rgba(37,203,6,1) 100%, rgba(0,0,0,1) 100%, rgba(18,27,43,1) 100%, rgba(19,28,28,1) 100%, rgba(13,20,24,1) 100%, rgba(5,4,36,1) 100%, rgba(13,20,24,1) 100%, rgba(9,9,121,0.8757878151260504) 100%, rgba(0,212,255,1) 100%);
+}
+.exchmain .dexchanges {
+  display: flex;justify-content: space-evenly;padding: 35px 30px;margin: 0;
+}
+.stkb {
+  width: 100%;margin: 4rem auto;
+}
+.stkb .stakebanner {
+  width: 60%;text-align: center;margin: auto;
+}
 @media (max-width: 1200px) and (min-width: 991px) {
     .c_content .hero_h1 div a .gsignin {
         width: 180px;
@@ -379,7 +398,7 @@
         margin: 0 auto 1rem auto;width: 100%;
     }
     .c_content .hero_h1 h1 {
-        font-size: 28px;font-weight: 900;color: #233a86;margin: 0 auto 1rem auto;
+        font-size: 28px;font-weight: 900;color: #f1f1f1;margin: 0 auto 1rem auto;
     }
     .c_content .hero_h1 div {
         margin-top: 0;
@@ -393,8 +412,11 @@
         padding: 5px 0;margin-left: 50px;margin: 20px 0 40px 0;
     }
     .c_content .hero_h1 div.get_sd_btns {
-        display: flex;justify-content: space-evenly;margin: 2rem auto;
+        display: flex;justify-content: space-evenly;margin: 5rem auto;
     }
+    .c_content .hero_h1 div a.getstarted {
+      font-size: 16px;padding: 6px 18px 6px 18px;
+  }
     .c_content .hero_h1 div a.learnmore {
         font-size: 16px;padding: 6px 18px 6px 18px;
     }
@@ -429,5 +451,11 @@
     .b_content .banner_h1 div a {
         font-size: 16px;
         font-weight: 600;padding: 6px 10px 6px 10px;margin-top: 3rem;
+    }
+    .stkb {
+      width: 100%;margin: 4rem auto;
+    }
+    .stkb .stakebanner {
+      width: 90%;text-align: center;margin: auto;
     }
 }

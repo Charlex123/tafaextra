@@ -6,12 +6,14 @@ import {React, useContext} from 'react'
 import Image from 'next/image';
 import styles from '../../styles/landing.module.css'
 import { useState, useEffect } from 'react';
-import signbtn from '../../assets/images/googlesignbtn.png';
 import Typed from 'react-typed';
 import Heroimg from '../../assets/images/herobg.png';
+import cgk from '../../assets/images/coingecko-aace8f3c.png';
+import cmc from '../../assets/images/coinmarketcap-a91aaec1.png';
+import dextools from '../../assets/images/dextools-chart-95a9780d.png';
+import quckswap from '../../assets/images/quickswap-light-3af62abd.png';
+import stakebanner from '../../assets/images/banner.png'
 import { ThemeContext } from '../../contexts/theme-context';
-import Bannerimg from '../../assets/images/mailmarketingbanner.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas, faCheck, faCheckCircle, faCheckSquare,faAlignJustify, faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faFontAwesome, faGoogle } from '@fortawesome/free-brands-svg-icons'
@@ -77,19 +79,35 @@ const toggleNav = () => {
                 />
                 <h1>Staking Dapp</h1>
             <div>
-              
+              <h4 className={styles.hero_h4}>The best time-locked staking system on the blockchain. High yield, protected by deflationary measures backed by validator nodes</h4>
             </div>
+            
             <div className={styles.get_sd_btns}>
-              <a title='get started' href={process.env.REACT_APP_REDIRECT_LIVE} rel='noopener noreferrer'><img src={signbtn}  alt='Google Sign In' className={styles.gsignin} /></a>
-              <a href='download' rel='noopener noreferrer' className={styles.learnmore}>Learn More</a>
+              <a title='get started' href='/' rel='noopener noreferrer' className={styles.getstarted}>Get Started</a>
+              <a href='/' rel='noopener noreferrer' className={styles.learnmore}>Launch Dapp</a>
             </div>
           </div>
           <div className={styles.hero_image}>
-            <Image src={Heroimg} alt='hero img' className={styles.hero_image_} quality={90} style={{objectFit: "contain"}}/>
+            <Image src={Heroimg} alt='hero img' className={styles.hero_image_} quality={90} style={{objectFit: "cover",marginTop: "50px"}}/>
           </div>
       </div>
       
-      
+      {/* dex tools */}
+
+      <div className={styles.exchmain}>
+        <div className={styles.dexchanges}>
+          <a href='https://coingecko.com'><Image src={cgk}/></a>
+          <a href='https://coinmarketcap.io'><Image src={cmc}/></a>
+          <a href='https://dextools.io'><Image src={dextools}/></a>
+          <a href='https://quickswap.exchange'><Image src={quckswap}/></a>
+        </div>
+      </div>
+
+      <div className={styles.stkb}>
+        <div>
+          <Image src={stakebanner} quality={90} layout style={{objectFit:"contain"}} className={styles.stakebanner}/>
+        </div>
+      </div>
     </div>
 
     
