@@ -59,25 +59,25 @@ const toggleNav = () => {
       <div className={styles.c_content}>
           <div className={styles.hero_h1}>
             <div>
-              <h1>
+              <h1 className={styles.h1}>
                 Welcome To TafaXtra  
-                
-            </h1>
+              </h1>
             </div>
             <Typed
                     strings={[
-                        'Backend Developer',
-                        'Frontend Developer',
-                        'Fullstack Developer']}
+                        'Newly Launched',
+                        'Reliable',
+                        'Sustainable',
+                        'Trusted']}
                     typeSpeed={40}
                     backSpeed={50}
                     className={styles.typedHeader}
                     style={{ color: '#08d34f', fontSize: '40px',fontWeight: 600,fontFamily: 'Verdana' }}
                     loop
                 />
+                <h1>Staking Dapp</h1>
             <div>
-              <h2>Your best mass gmail sender</h2>
-              <p>Send, organize and track your email campaigns for maximum outreach, engagement, conversions and sales</p>
+              
             </div>
             <div className={styles.get_sd_btns}>
               <a title='get started' href={process.env.REACT_APP_REDIRECT_LIVE} rel='noopener noreferrer'><img src={signbtn}  alt='Google Sign In' className={styles.gsignin} /></a>
@@ -85,7 +85,7 @@ const toggleNav = () => {
             </div>
           </div>
           <div className={styles.hero_image}>
-            <Image src={Heroimg} alt='hero img' className={styles.hero_image_}/>
+            <Image src={Heroimg} alt='hero img' className={styles.hero_image_} quality={90} style={{objectFit: "contain"}}/>
           </div>
       </div>
       

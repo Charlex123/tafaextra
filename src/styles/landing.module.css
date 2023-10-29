@@ -278,14 +278,11 @@
 .c_content .hero_image {
   width: 60%;
 }
-.c_content .hero_image_ {
-    transform: rotate(0);width: 100%;
-}
 .c_content .hero_h1 {
     margin: 1rem auto;text-align: center;align-items: center;width: 45%;
 }
 .c_content .hero_h1 h1 {
-    font-size: 40px;font-weight: 900;color: #f1f1f1;
+    font-size: 45px;font-weight: 900;color: #f1f1f1;
 }
 .c_content .hero_h1 div {
     margin-top: 55px;
