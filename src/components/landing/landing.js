@@ -105,6 +105,10 @@ const toggleNav = () => {
 
       <div className={styles.stkb}>
         <div>
+          <h3>Lauching</h3>
+          <h1>TAFAXTRA ECO SYSTEM</h1>
+        </div>
+        <div>
           <Image src={stakebanner} quality={90} layout style={{objectFit:"contain"}} className={styles.stakebanner}/>
         </div>
       </div>
