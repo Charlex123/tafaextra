@@ -1,10 +1,8 @@
 import { Container } from '@material-ui/core';
 import React, { useContext } from 'react';
-import codings from '../../assets/lottie/coding.json';
 import { ThemeContext } from '../../contexts/theme-context';
 import { aboutData } from '../../data/about-data';
 import styles from '../../styles/about.module.css';
-import AnimationLottie from '../Animation';
 
 
 function About() {
@@ -22,9 +20,6 @@ function About() {
                     <div className={styles.aboutDescription}>
                         <h2 style={{ color: theme.primary }}>{aboutData.title}</h2>
                         <p style={{ color: theme.tertiary }}>{aboutData.description1}<br /><br />{aboutData.description2}</p>
-                    </div>
-                    <div className={styles.aboutAnimation}>
-                        <AnimationLottie animationPath={codings} />
                     </div>
                 </div>
             </Container>
